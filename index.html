@@ -5,46 +5,72 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile Card</title>
-    <!-- Tailwind CSS via CDN (no install needed) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex min-h-screen items-start justify-center bg-gray-600 pt-16">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile Card</title>
+  <!-- Tailwind CSS via CDN (no install needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen items-start justify-center my-colored-div pt-16">
 
   <!-- Inner <div>: this is the "card" box that holds all the content -->
-  <div class="max-w-sm rounded-2xl bg-white p-6 text-center shadow-xl">
+  <div class="max-w-sm rounded-4xl bg-white p-6 text-center shadow-xl">
 
     <!-- <img>: Displays an image. 
          The "src" is the image link. 
          The "alt" text is shown if the image doesn't load. -->
-    <img 
-      src="assets/shuri.jpg" 
-      alt="Shuri from Black Panther"
-      class="mx-auto mb-4 h-30 w-30 rounded-full"
-    />
+    <img src="assets/pizza.jpeg" alt="I spent part of my weekly 2 hours typing this alt text"
+      class="mx-auto mb-4 h-29 w-30 rounded-2xl" />
 
     <!-- <h1>: Heading tag (used for titles). 
          Larger headings have lower numbers: <h1> is biggest, <h6> is smallest. -->
-    <h1 class="text-2xl font-bold text-purple-600">Shuri</h1>
+    <h1 class="text-2xl font-bold text-orange-600">Jacob</h1>
 
     <!-- <p>: Paragraph tags hold blocks of text. -->
-    <p class="mt-2 text-gray-600">Head Engineer, Wakanda Design Group</p>
-    <p class="mt-1 text-sm text-gray-500">"Vibranium-powered apps only."</p>
+    <p class="mt-2 text-gray-700">Freshman of Northside, coder of Python, Java, and Castle</p>
+    <p class="mt-1 text-sm text-gray-400">[insert additional person description]</p>
 
     <!-- <a>: Anchor tag = link. 
          "href" tells it where to go when clicked.
          "target='_blank'" opens the link in a new tab. -->
-    <a 
-      href="https://github.com/YOUR-USERNAME-HERE" 
-      target="_blank"
-      class="mt-4 inline-block rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
-    >
-      Visit My GitHub
+    <a href="https://github.com/jhwang4" target="_blank"
+      class="mt-4 inline-block rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600">
+      MY GitHub
     </a>
+    <!-- 📊 Data Storytelling Project Card -->
+    <section class="mt-8 rounded-2xl bg-white/90 p-5 shadow-md ring-1 ring-gray-200 max-w-xl mx-auto">
+      <h3 class="text-lg font-semibold text-gray-900">📊 Data Storytelling — Heroes & Animals</h3>
+      <p class="text-sm text-gray-600 mt-2">
+        Today I researched about the Water Buffalo's statistics, and through Python and Google Collab; researched and
+        displayed things about Woodpeckers like family, average children, and lifespan.
+      </p>
+      <div class="mt-4 flex gap-3">
+        <a href="https://colab.research.google.com/drive/1e60I_U7EIjLIiK2gRPbn9ds4kXEB4hMg" target="_blank"
+          class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+          🔗 Google colab journal</a>
+      </div>
+
+      <!-- 📊 API move testing -->
+      <section class="mt-8 rounded-2xl bg-white/90 p-5 shadow-md ring-1 ring-gray-200 max-w-xl mx-auto">
+        <h3 class="text-lg font-semibold text-gray-900">📊 API Studio Ghibli Display</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Today I found out that my (insert animal) (lives, eats, etc) in the (x) through Python Data Science analysis
+          in Google Colab!
+        </p>
+        <div class="mt-4 flex gap-3">
+          <a href="https://github.com/jhwang4/Jacob-DC_Fall-Week-3-Live-Data-with-APIs/settings/pages" target="_blank"
+            class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+            🔗 Open Notebook</a>
+        </div>
 
   </div> <!-- closes card div -->
-  </body>
+  <style>
+    .my-colored-div {
+    background-color: rgb(43, 43, 108);
+}
+  </style>
+
+</body>
+
 </html>
