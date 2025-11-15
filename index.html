@@ -16,7 +16,7 @@
 <body class="flex min-h-screen items-start justify-center hspace='100' .my-colored-div pt-16">
 
   <!-- Inner <div>: this is the "card" box that holds all the content c-->
-  <div class= "max-w-md rounded-8xl my-colored-yellow p-6 text-center shadow-xl">
+  <div class= "max-w-md rounded-8xl my-colored-yellow p-6 shadow-xl">
 
     <!-- <img>: Displays an image. 
          The "src" is the image link. 
@@ -29,7 +29,7 @@
     <h1 class="text-2xl font-bold text-orange-500">Jacob Hwang</h1>
 
     <!-- <p>: Paragraph tags hold blocks of text. -->
-    <p class="mt-2 text-gray-800">Freshman of Northside, coder of Python, Java, and Castle</p>
+    <p class="mt-2 text-gray-800">Freshman of Northside; and coder of Python, Java, and Castle</p>
     <p class="mt-1 text-sm text-gray-400">[insert additional person description]</p>
 
     <!-- <a>: Anchor tag = link. 
@@ -40,22 +40,21 @@
       MY GitHub
     </a>
 
-    <select class="select select-primary">
+    <select id="mySelect">
   <option disabled selected>Pick a text editor</option>
   <option>Week 2</option>
   <option>Week 3</option>
   <option>Week 4</option>
   <option>Week 5</option>
-</select>
+    </select>
 
  <script>
         const selectElement = document.getElementById('mySelect');
         const dynamicButton = document.getElementById('dynamicButton');
-
         selectElement.addEventListener('change', function() {
             if (this.value === 'Week 2') { // Example: show button only for 'Option 2'
                 dynamicButton.style.display = 'block'; // Make button visible
-            } else if (this.value === 'Week 3'{
+            } else if (this.value === 'Week 3') {
                 dynamicButton.style.display = 'none'; // Hide button for other options
             }
         });
@@ -63,7 +62,7 @@
         dynamicButton.addEventListener('click', function() {
             alert('Dynamic button clicked!');
         });
-    </script>
+  </script>
 
     <!-- 📊 Data Storytelling Project Card -->
     <section class="mt-8 rounded-2xl bg-white/90 p-5 shadow-md ring-1 ring-gray-200 max-w-xl mx-auto">
@@ -78,40 +77,38 @@
           🔗 Google colab journal</a>
       </div>
 
-      <!-- 📊 API move testing -->
-      <section class="mt-8 rounded-2xl bg-white/90 p-5 shadow-md ring-1 ring-gray-200 max-w-xl mx-auto">
-        <h3 class="text-lg font-semibold text-gray-900">📊 API Studio Ghibli Display</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Today I researched all of studio Ghibli's movies and statistics, using APIs to extract everything.
-        </p>
-        <div class="mt-4 flex gap-3">
-          <a href="https://github.com/jhwang4/Jacob-DC_Fall-Week-3-Live-Data-with-APIs/settings/pages" target="_blank"
-            class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
-            🔗 Open Notebook</a>
-        </div>
-        <!-- 📊 Teachable Machine Learning -->
-<h3 class="text-lg font-semibold text-gray-900">📊 Teachable Machine; Ai </h3>
-  <p class="text-sm text-gray-600 mt-2">
-    Today I found out that my (insert animal) (lives, eats, etc) in the (x) through Python Data Science analysis in Google Colab!
-  </p>
-  <div class="mt-4 flex gap-3">
-    <a href="YOUR_COLAB_NOTEBOOK_LINK"
-       target="_blank"
-       class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
-      🔗 Open Notebook
-  </div>
+    <!-- 📊 API Studio Ghibli Display -->
+      <h3 class="text-lg font-semibold text-gray-900">📊 API Studio Ghibli Display</h3>
+      <p class="text-sm text-gray-600 mt-2">
+       Today I researched all of studio Ghibli's movies and statistics, using APIs to extract everything.
+      </p>
+      <div class="mt-4 flex gap-3">
+      <a href="https://github.com/jhwang4/Jacob-DC_Fall-Week-3-Live-Data-with-APIs/settings/pages" target="_blank"
+          class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+          🔗 Open Notebook</a>
+      </div>
+      <!-- 📊 Teachable Machine Learning -->
+    <h3 class="text-lg font-semibold text-gray-900">📊 Teachable Machine; Ai </h3>
+    <p class="text-sm text-gray-600 mt-2">
+      Today I trained Teachable Ai on different hand structures, specifically each finger, and made a user interface where people can try it out.
+    </p>
+    <div class="mt-4 flex gap-3">
+      <a href="https://github.com/jhwang4/WEEK-4" 
+      target="_blank"
+      class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+      🔗 Open thingy
+      <a href=""></a>
+    </div>
 
 
   </div> <!-- closes card div -->
 
-  <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"></div>
-
   <style>
-    .my-colored-div {
-    background-color: rgb(43, 43, 108);
+.my-colored-div {
+  background-color: rgb(43, 43, 108);
 }
 .my-colored-yellow {
-    background-color: rgb(25, 127, 182);
+  background-color: rgb(25, 127, 182);
 }
 
   </style>
