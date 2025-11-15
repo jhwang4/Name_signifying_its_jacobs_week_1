@@ -13,10 +13,10 @@
    <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex min-h-screen items-start justify-center hspace='100' my-colored-div pt-16">
+<body class="flex min-h-screen items-start justify-center hspace='100' .my-colored-div pt-16">
 
   <!-- Inner <div>: this is the "card" box that holds all the content c-->
-  <div class="max-w-sm rounded-8xl my-colored-yellow p-6 text-center shadow-xl">
+  <div class= "max-w-md rounded-8xl my-colored-yellow p-6 text-center shadow-xl">
 
     <!-- <img>: Displays an image. 
          The "src" is the image link. 
@@ -36,9 +36,35 @@
          "href" tells it where to go when clicked.
          "target='_blank'" opens the link in a new tab. -->
     <a href="https://github.com/jhwang4" target="_blank"
-      class="mt-4 inline-block rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600">
+      class="mt-4 inline-block rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600 justify-center">
       MY GitHub
     </a>
+
+    <select class="select select-primary">
+  <option disabled selected>Pick a text editor</option>
+  <option>Week 2</option>
+  <option>Week 3</option>
+  <option>Week 4</option>
+  <option>Week 5</option>
+</select>
+
+ <script>
+        const selectElement = document.getElementById('mySelect');
+        const dynamicButton = document.getElementById('dynamicButton');
+
+        selectElement.addEventListener('change', function() {
+            if (this.value === 'Week 2') { // Example: show button only for 'Option 2'
+                dynamicButton.style.display = 'block'; // Make button visible
+            } else if (this.value === 'Week 3'{
+                dynamicButton.style.display = 'none'; // Hide button for other options
+            }
+        });
+
+        dynamicButton.addEventListener('click', function() {
+            alert('Dynamic button clicked!');
+        });
+    </script>
+
     <!-- 📊 Data Storytelling Project Card -->
     <section class="mt-8 rounded-2xl bg-white/90 p-5 shadow-md ring-1 ring-gray-200 max-w-xl mx-auto">
       <h3 class="text-lg font-semibold text-gray-900">📊 Data Storytelling — Heroes & Animals</h3>
@@ -63,6 +89,18 @@
             class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
             🔗 Open Notebook</a>
         </div>
+        <!-- 📊 Teachable Machine Learning -->
+<h3 class="text-lg font-semibold text-gray-900">📊 Teachable Machine; Ai </h3>
+  <p class="text-sm text-gray-600 mt-2">
+    Today I found out that my (insert animal) (lives, eats, etc) in the (x) through Python Data Science analysis in Google Colab!
+  </p>
+  <div class="mt-4 flex gap-3">
+    <a href="YOUR_COLAB_NOTEBOOK_LINK"
+       target="_blank"
+       class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+      🔗 Open Notebook
+  </div>
+
 
   </div> <!-- closes card div -->
 
