@@ -13,10 +13,10 @@
    <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex min-h-screen items-start justify-center hspace='100' .my-colored-div pt-16">
+<body class="flex min-h-screen items-start justify-center hspace='100' pt-16">
 
   <!-- Inner <div>: this is the "card" box that holds all the content c-->
-  <div class= "max-w-md rounded-8xl my-colored-yellow p-6 shadow-xl">
+  <div class= "max-w-md rounded-8xl bg-gradient-to-br from-blue-300 to-red-600 p-6 shadow-xl">
 
     <!-- <img>: Displays an image. 
          The "src" is the image link. 
@@ -29,8 +29,8 @@
     <h1 class="text-2xl font-bold text-orange-500">Jacob Hwang</h1>
 
     <!-- <p>: Paragraph tags hold blocks of text. -->
-    <p class="mt-2 text-gray-800">Freshman of Northside; and coder of Python, Java, and Castle</p>
-    <p class="mt-1 text-sm text-gray-400">[insert additional person description]</p>
+    <p class="mt-2 text-gray-800">Freshman of Northside; and coder of Python, Java, and Castle. In Robotics, Math Team, but also Esports!</p>
+    <p class="mt-1 text-sm text-gray-500">[insert additional person description]</p>
 
     <!-- <a>: Anchor tag = link. 
          "href" tells it where to go when clicked.
@@ -40,6 +40,7 @@
       MY GitHub
     </a>
 
+    <!-- // the thing that prompts for which week -->
     <select id="mySelect">
   <option disabled selected>Pick a week's DPI project</option>
   <option>Week 2</option>
@@ -48,6 +49,7 @@
   <option>Week 5</option>
     </select>
 
+  <!-- code that tries to add buttons. I have a feeling I'm not gonna get this to work...-->
  <script>
         const selectElement = document.getElementById('mySelect');
         const dynamicButton = document.getElementById('dynamicButton');
@@ -56,6 +58,12 @@
                 dynamicButton.style.display = 'block'; // Make button visible
             } else if (this.value === 'Week 3') {
                 dynamicButton.style.display = 'none'; // Hide button for other options
+            }
+            else if (this.value === 'Week 4') {
+
+            }
+            else if (this.value === 'Week 5') {
+
             }
         });
 
@@ -73,23 +81,23 @@
       </p>
       <div class="mt-4 flex gap-3">
         <a href="https://colab.research.google.com/drive/1e60I_U7EIjLIiK2gRPbn9ds4kXEB4hMg" target="_blank"
-          class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+          class="rounded-lg bg-blue-600 px-20 py-2 text-white my-colored-div transition">
           🔗 Google colab journal</a>
       </div>
 
-    <!-- 📊 API Studio Ghibli Display, Week 3 -->
-      <h3 class="text-lg font-semibold text-gray-900">📊 API Studio Ghibli Display</h3>
+    <!-- 🖥 API Studio Ghibli Display, Week 3 -->
+      <h3 class="">🖥 API Studio Ghibli Display</h3>
       <p class="text-sm text-gray-600 mt-2">
-       Today I researched all of studio Ghibli's movies and statistics, using APIs to extract everything.
+       Today I researched all of studio Ghibli's movies and statistics, using APIs to extract data from websites.
 
       </p>
       <div class="mt-4 flex gap-3">
       <a href="https://github.com/jhwang4/Jacob-DC_Fall-Week-3-Live-Data-with-APIs/settings/pages" target="_blank"
-          class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+          class="rounded-lg bg-blue-600 px-20 py-2 text-white my-colored-div transition">
           🔗 Open Notebook</a>
       </div>
-      <!-- 📊 Teachable Machine Learning, Week 4 -->
-    <h3 class="text-lg font-semibold text-gray-900">📊 Teachable Machine; Ai </h3>
+      <!-- 📷 Teachable Machine Learning, Week 4 -->
+    <h3 class="text-lg font-semibold text-gray-900">📷 Teachable Machine; Ai image training</h3>
     <p class="text-sm text-gray-600 mt-2">
       Today I trained Teachable Ai on different hand structures, specifically each finger, and made a user interface where people can try it out.
 
@@ -97,12 +105,12 @@
     <div class="mt-4 flex gap-3">
       <a href="https://github.com/jhwang4/WEEK-4" 
       target="_blank"
-      class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
+      class="rounded-lg bg-blue-600 px-20 py-2 text-white my-colored-div transition">
       🔗 Open thingy
       <a href=""></a>
     </div>
     <!-- 📊 Ai learning, Week 5 -->
-    <h3 class="text-lg font-semibold text-gray-900">📊 New Ai thing </h3>
+    <h3 class="text-lg font-semibold text-gray-900">👨🏼‍💼 Conversational Vercal Ai </h3>
     <p class="text-sm text-gray-600 mt-2">
       Today I crafted my own Ai helper who can help you find computer related jobs while having their own personality. 
 
@@ -110,8 +118,8 @@
     <div class="mt-4 flex gap-3">
       <a href="https://new-week-5-ai-mentor.vercel.app/" 
       target="_blank"
-      class="rounded-lg bg-blue-600 px-20 py-2 text-white hover:bg-blue-700 transition">
-      🔗 Open ai chat
+      class="rounded-lg bg-blue-600 px-20 py-2 text-white my-colored-div transition">
+      🔗 Open Ai chat
       <a href=""></a>
     </div>
 
@@ -121,7 +129,7 @@
 .my-colored-div {
   background-color: rgb(43, 43, 108);
 }
-.my-colored-yellow {
+.my-colored-cyan {
   background-color: rgb(25, 127, 182);
 }
 
